@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Plugin Factory</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #000000 0%, #333333 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="%23ff69b4" opacity="0.1"/><circle cx="80" cy="40" r="1.5" fill="%23ff69b4" opacity="0.15"/><circle cx="40" cy="80" r="1" fill="%23ff69b4" opacity="0.1"/></svg>');
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .company-name {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, #ffffff, #ff69b4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #cccccc;
+            margin-bottom: 2rem;
+        }
+
+        .main-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .policy-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 3px solid #ff69b4;
+        }
+
+        .policy-title {
+            font-size: 2.2rem;
+            color: #000000;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .last-updated {
+            color: #666666;
+            font-size: 0.95rem;
+            background-color: #f8f9fa;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            display: inline-block;
+        }
+
+        .section {
+            margin-bottom: 2.5rem;
+            padding: 2rem;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid #ff69b4;
+        }
+
+        .section h2 {
+            color: #000000;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        .section h2::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background-color: #ff69b4;
+            border-radius: 50%;
+            margin-right: 12px;
+        }
+
+        .section h3 {
+            color: #333333;
+            font-size: 1.1rem;
+            margin: 1.5rem 0 0.75rem 0;
+            font-weight: 600;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            color: #555555;
+        }
+
+        .section ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .section li {
+            margin-bottom: 0.5rem;
+            color: #555555;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #ff69b4, #ff1493);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border: 2px solid #ff69b4;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            justify-content: center;
+        }
+
+        .contact-email {
+            color: #ff69b4;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 0.75rem 1.5rem;
+            border: 2px solid #ff69b4;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-email:hover {
+            background-color: #ff69b4;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            background-color: #000000;
+            color: #cccccc;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 2rem 1rem;
+            }
+            
+            .company-name {
+                font-size: 2rem;
+            }
+            
+            .main-container {
+                padding: 2rem 1rem;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="company-name">Plugin Factory</h1>
+            <p class="tagline">Building Tomorrow's Browser Extensions</p>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="policy-header">
+            <h1 class="policy-title">Privacy Policy</h1>
+            <div class="last-updated">Last Updated: December 2024</div>
+        </div>
+
+        <section class="section">
+            <h2>Overview</h2>
+            <p>At Plugin Factory, we are committed to protecting your privacy and ensuring transparency in how we collect, use, and protect your personal information. This Privacy Policy applies to all Chrome extensions, web applications, and services developed by Plugin Factory.</p>
+            <div class="highlight-box">
+                <strong>Our Commitment:</strong> We believe privacy is a fundamental right. We collect only the minimum data necessary to provide our services and never sell your personal information to third parties.
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Information We Collect</h2>
+            
+            <h3>Data Collected by Our Chrome Extensions</h3>
+            <ul>
+                <li><strong>Website URLs and Content:</strong> Some extensions may access the current webpage's URL and content to provide functionality</li>
+                <li><strong>User Preferences:</strong> Settings and customization preferences you configure within our extensions</li>
+                <li><strong>Usage Analytics:</strong> Anonymous usage statistics to improve extension performance and features</li>
+                <li><strong>Browser Storage:</strong> Local storage of user preferences and temporary data necessary for extension functionality</li>
+            </ul>
+
+            <h3>Personal Information</h3>
+            <ul>
+                <li><strong>Contact Information:</strong> Email addresses when you contact our support team</li>
+                <li><strong>Account Data:</strong> If registration is required, we collect usernames and encrypted passwords</li>
+                <li><strong>Feedback and Reviews:</strong> Any feedback, bug reports, or feature requests you provide</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>AI and Machine Learning Processing</h2>
+            <p>Several of our extensions utilize artificial intelligence and machine learning technologies to enhance functionality:</p>
+            
+            <h3>AI Data Processing</h3>
+            <ul>
+                <li><strong>Content Analysis:</strong> AI may analyze webpage content to provide intelligent recommendations or automation</li>
+                <li><strong>Pattern Recognition:</strong> Machine learning algorithms may identify patterns in your usage to improve user experience</li>
+                <li><strong>Natural Language Processing:</strong> Some extensions process text content to provide language-related features</li>
+                <li><strong>Image Recognition:</strong> Certain extensions may analyze images for functionality purposes</li>
+            </ul>
+
+            <h3>AI Data Protection</h3>
+            <ul>
+                <li>All AI processing is performed with privacy-first principles</li>
+                <li>Data processed by AI systems is anonymized whenever possible</li>
+                <li>We do not use your personal content to train AI models for other users</li>
+                <li>AI processing may occur locally on your device or through secure, encrypted connections to our servers</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>How We Use Your Information</h2>
+            <ul>
+                <li><strong>Service Provision:</strong> To provide, maintain, and improve our extensions and services</li>
+                <li><strong>Customization:</strong> To personalize your experience and remember your preferences</li>
+                <li><strong>Communication:</strong> To respond to your inquiries, provide support, and send important updates</li>
+                <li><strong>Analytics:</strong> To understand how our extensions are used and identify areas for improvement</li>
+                <li><strong>Security:</strong> To detect, prevent, and address technical issues and security vulnerabilities</li>
+                <li><strong>Legal Compliance:</strong> To comply with applicable laws and legal processes</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Chrome Extension Permissions</h2>
+            <p>Our Chrome extensions request only the minimum permissions necessary for functionality:</p>
+            
+            <h3>Common Permissions Explained</h3>
+            <ul>
+                <li><strong>Active Tab:</strong> Access to the currently active browser tab for content interaction</li>
+                <li><strong>Storage:</strong> Local storage of user preferences and extension data</li>
+                <li><strong>Background:</strong> Running background processes for continuous functionality</li>
+                <li><strong>Host Permissions:</strong> Access to specific websites where the extension provides functionality</li>
+                <li><strong>Context Menus:</strong> Adding options to right-click context menus</li>
+            </ul>
+
+            <p><strong>Permission Changes:</strong> If we need additional permissions for new features, we will clearly explain why these permissions are needed and request your consent through the Chrome Web Store update process.</p>
+        </section>
+
+        <section class="section">
+            <h2>Data Sharing and Third Parties</h2>
+            <p>We do not sell, trade, or rent your personal information to third parties. We may share information only in the following circumstances:</p>
+            
+            <ul>
+                <li><strong>Service Providers:</strong> With trusted third-party services that help us operate our extensions (e.g., analytics, cloud storage)</li>
+                <li><strong>Legal Requirements:</strong> When required by law, legal process, or to protect our rights and safety</li>
+                <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or asset sale</li>
+                <li><strong>With Your Consent:</strong> When you explicitly agree to share information with third parties</li>
+            </ul>
+
+            <h3>Third-Party Services We May Use</h3>
+            <ul>
+                <li>Google Analytics (anonymized data only)</li>
+                <li>Cloud storage providers for backup and synchronization</li>
+                <li>AI/ML APIs for advanced features (with data encryption)</li>
+                <li>Customer support platforms</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Data Security</h2>
+            <p>We implement industry-standard security measures to protect your information:</p>
+            
+            <ul>
+                <li><strong>Encryption:</strong> Data transmission is protected using SSL/TLS encryption</li>
+                <li><strong>Access Controls:</strong> Strict access controls limit who can access user data</li>
+                <li><strong>Regular Audits:</strong> Regular security audits and vulnerability assessments</li>
+                <li><strong>Secure Storage:</strong> Data is stored in secure, encrypted databases</li>
+                <li><strong>Incident Response:</strong> Procedures in place to respond quickly to any security incidents</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Data Retention</h2>
+            <ul>
+                <li><strong>Extension Data:</strong> Stored locally on your device and retained until you uninstall the extension or clear browser data</li>
+                <li><strong>Analytics Data:</strong> Anonymous usage data is retained for up to 24 months</li>
+                <li><strong>Support Communications:</strong> Support emails and communications are retained for up to 3 years</li>
+                <li><strong>Account Data:</strong> If applicable, account data is retained until you delete your account</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Your Rights and Choices</h2>
+            <p>You have the following rights regarding your personal information:</p>
+            
+            <ul>
+                <li><strong>Access:</strong> Request access to the personal information we have about you</li>
+                <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information</li>
+                <li><strong>Deletion:</strong> Request deletion of your personal information</li>
+                <li><strong>Portability:</strong> Request a copy of your data in a portable format</li>
+                <li><strong>Opt-out:</strong> Opt-out of certain data collection and processing activities</li>
+                <li><strong>Extension Removal:</strong> Uninstall our extensions at any time through Chrome's extension management</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Children's Privacy</h2>
+            <p>Our services are not directed to children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
+        </section>
+
+        <section class="section">
+            <h2>International Data Transfers</h2>
+            <p>Your information may be transferred to and processed in countries other than your own. We ensure that such transfers comply with applicable data protection laws and implement appropriate safeguards to protect your information.</p>
+        </section>
+
+        <section class="section">
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or applicable laws. We will notify you of any material changes by:</p>
+            
+            <ul>
+                <li>Posting the updated policy on this website</li>
+                <li>Updating the "Last Updated" date</li>
+                <li>Providing notice through our extensions or via email when appropriate</li>
+            </ul>
+            
+            <p>Your continued use of our services after any changes constitutes acceptance of the updated Privacy Policy.</p>
+        </section>
+
+        <section class="section contact-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us:</p>
+            <a href="mailto:privacy@pluginfactory.com" class="contact-email">privacy@pluginfactory.com</a>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">We typically respond to privacy inquiries within 48 hours.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Plugin Factory. All rights reserved. | Committed to your privacy and security.</p>
+    </footer>
+</body>
+</html>
